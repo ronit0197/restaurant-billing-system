@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        <nav className="bg-rose-500 p-4 shadow-md fixed top-0 w-full z-50">
+        <nav className="bg-sky-700 p-4 shadow-md fixed top-0 w-full z-50">
             <div className="container mx-auto flex justify-between items-center relative">
                 {/* Logo */}
                 <div className="text-white text-xl font-bold">ERP</div>
@@ -23,7 +23,7 @@ export default function Navbar() {
                             <p className="text-gray-800 font-medium">John Doe</p>
                             <p className="text-gray-500 text-sm">john.doe@example.com</p>
                             <hr className="my-2" />
-                            <button className="w-full text-center text-white bg-rose-400 hover:bg-rose-500 px-4 py-2 rounded-lg" onClick={() => alert('Logging out...')}>
+                            <button className="w-full text-center text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-lg" onClick={() => alert('Logging out...')}>
                                 Log out
                             </button>
                         </div>
