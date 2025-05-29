@@ -13,8 +13,8 @@ export default function Login() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-rose-500 to-rose-200">
-            <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
+        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-700 to-sky-400">
+            <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg m-5 sm:m-0">
                 <h2 className="text-2xl font-bold text-gray-800 text-center">Welcome Back</h2>
                 <p className="text-gray-500 text-center mb-6">Login to continue</p>
 
@@ -24,7 +24,7 @@ export default function Login() {
                         <input
                             type="email"
                             id="email"
-                            className="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:outline-none"
+                            className="text-black w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none"
                             placeholder="Enter your email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -37,7 +37,7 @@ export default function Login() {
                         <input
                             type="password"
                             id="password"
-                            className="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:outline-none"
+                            className="text-black w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:outline-none"
                             placeholder="Enter your password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -47,16 +47,16 @@ export default function Login() {
 
                     <div className="flex items-center justify-between mb-4">
                         <label className="flex items-center text-gray-600">
-                            <input type="checkbox" className="form-checkbox text-rose-500" />
+                            <input type="checkbox" className="form-checkbox text-sky-500" />
                             <span className="ml-2">Remember me</span>
                         </label>
-                        <a href="#" className="text-rose-500 hover:underline">Forgot Password?</a>
+                        <a href="#" className="text-sky-500 hover:underline">Forgot Password?</a>
                     </div>
 
-                    <button type="submit" className="w-full bg-rose-500 text-white py-3 rounded-lg hover:bg-rose-600 transition duration-300">Login</button>
+                    <button type="submit" className="w-full bg-sky-500 text-white py-3 rounded-lg hover:bg-sky-600 transition duration-300">Login</button>
                 </form>
 
-                <p className="text-gray-600 text-center mt-4">Don't have an account? <Link href="/signup" className="text-rose-500 hover:underline">Sign up</Link></p>
+                <p className="text-gray-600 text-center mt-4">Don't have an account? <Link href="/signup" className="text-sky-500 hover:underline">Sign up</Link></p>
             </div>
         </div>
     );
